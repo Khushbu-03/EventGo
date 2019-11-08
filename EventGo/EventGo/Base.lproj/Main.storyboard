@@ -74,6 +74,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J16-fW-c9i">
+                                <rect key="frame" x="205" y="214" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="UnF-hc-rdz"/>
@@ -189,20 +194,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HomeViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9o-Qv-4qU">
-                                <rect key="frame" x="128" y="379" width="158" height="99"/>
+                                <rect key="frame" x="128" y="65" width="158" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WWf-BW-SZU">
+                                <rect key="frame" x="0.0" y="162" width="414" height="700"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WWf-BW-SZU" firstAttribute="leading" secondItem="jKu-aj-zZg" secondAttribute="leading" id="3Um-Xk-Gp9"/>
+                            <constraint firstItem="WWf-BW-SZU" firstAttribute="bottom" secondItem="jKu-aj-zZg" secondAttribute="bottom" id="I68-85-DML"/>
+                            <constraint firstItem="WWf-BW-SZU" firstAttribute="trailing" secondItem="jKu-aj-zZg" secondAttribute="trailing" id="kkR-op-ZBB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jKu-aj-zZg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eXi-tj-oyv"/>
+                    <connections>
+                        <outlet property="mapView" destination="WWf-BW-SZU" id="Yko-Gu-2Re"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dw9-ud-HbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2585.507246376812" y="99.776785714285708"/>
+            <point key="canvasLocation" x="3495.652173913044" y="99.776785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5i1-LS-nMV">
@@ -221,6 +238,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQT-aA-OoE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d1v-mt-MgY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wnU-hX-4dH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QFR-7f-Hx1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPm-y6-mX8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2585.507246376812" y="99.776785714285708"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		516A42012A689568C34A30F5 /* Pods_EventGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7BCBAEAFC83DCBAE43134F /* Pods_EventGo.framework */; };
 		BC2328E423737F3200881634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2328E323737F3200881634 /* AppDelegate.swift */; };
 		BC2328E623737F3200881634 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2328E523737F3200881634 /* SceneDelegate.swift */; };
 		BC2328E823737F3200881634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2328E723737F3200881634 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F7BCBAEAFC83DCBAE43134F /* Pods_EventGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2328E023737F3200881634 /* EventGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2328E323737F3200881634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC2328E523737F3200881634 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		BC2328F72373854500881634 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BC2328F92373855500881634 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC2328FB2373856600881634 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F4C9A7D01474EF995CFB8AAF /* Pods-EventGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventGo.release.xcconfig"; path = "Target Support Files/Pods-EventGo/Pods-EventGo.release.xcconfig"; sourceTree = "<group>"; };
+		FBB6A964A65FD72872BBEFFC /* Pods-EventGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventGo.debug.xcconfig"; path = "Target Support Files/Pods-EventGo/Pods-EventGo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516A42012A689568C34A30F5 /* Pods_EventGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7416E8D6BC81DB8F5721822C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBB6A964A65FD72872BBEFFC /* Pods-EventGo.debug.xcconfig */,
+				F4C9A7D01474EF995CFB8AAF /* Pods-EventGo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BC2328D723737F3200881634 = {
 			isa = PBXGroup;
 			children = (
 				BC2328E223737F3200881634 /* EventGo */,
 				BC2328E123737F3200881634 /* Products */,
+				7416E8D6BC81DB8F5721822C /* Pods */,
+				F743685B08ACA5BA7097F1EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +101,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		F743685B08ACA5BA7097F1EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F7BCBAEAFC83DCBAE43134F /* Pods_EventGo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC2328F423737F3400881634 /* Build configuration list for PBXNativeTarget "EventGo" */;
 			buildPhases = (
+				F12BD54575F8486D3269C225 /* [CP] Check Pods Manifest.lock */,
 				BC2328DC23737F3200881634 /* Sources */,
 				BC2328DD23737F3200881634 /* Frameworks */,
 				BC2328DE23737F3200881634 /* Resources */,
+				C79A540CB47F7AAA4655DCE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C79A540CB47F7AAA4655DCE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventGo/Pods-EventGo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventGo/Pods-EventGo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventGo/Pods-EventGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F12BD54575F8486D3269C225 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC2328DC23737F3200881634 /* Sources */ = {
@@ -302,6 +371,7 @@
 		};
 		BC2328F523737F3400881634 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBB6A964A65FD72872BBEFFC /* Pods-EventGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +389,7 @@
 		};
 		BC2328F623737F3400881634 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C9A7D01474EF995CFB8AAF /* Pods-EventGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
