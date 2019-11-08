@@ -74,11 +74,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQ5-TO-bna">
+                                <rect key="frame" x="188" y="602" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="tdR-qX-Zxb" kind="show" id="ltp-iS-khm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="UnF-hc-rdz"/>
                     </view>
                     <navigationItem key="navigationItem" id="qRk-1Y-4Ib"/>
+                    <connections>
+                        <outlet property="loginButton" destination="fQ5-TO-bna" id="0ki-yP-lzZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alb-aO-1vr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,6 +210,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="jKu-aj-zZg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Uk1-8x-OH9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dw9-ud-HbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
