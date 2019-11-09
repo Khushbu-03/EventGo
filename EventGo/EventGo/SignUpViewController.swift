@@ -23,6 +23,8 @@ class SignUpViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var signUpButton: UIButton!
     
     @IBOutlet weak var errorLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

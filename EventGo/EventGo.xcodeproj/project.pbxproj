@@ -16,6 +16,7 @@
 		BC2328F82373854500881634 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2328F72373854500881634 /* SignUpViewController.swift */; };
 		BC2328FA2373855500881634 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2328F92373855500881634 /* LoginViewController.swift */; };
 		BC2328FC2373856600881634 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2328FB2373856600881634 /* HomeViewController.swift */; };
+		BC57EEAB23763778009A6BF0 /* logo_img.png in Resources */ = {isa = PBXBuildFile; fileRef = BC57EEAA23763778009A6BF0 /* logo_img.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BC2328F72373854500881634 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BC2328F92373855500881634 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BC2328FB2373856600881634 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BC57EEAA23763778009A6BF0 /* logo_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_img.png; path = ../../../../../Downloads/logo_img.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		BC2328E223737F3200881634 /* EventGo */ = {
 			isa = PBXGroup;
 			children = (
+				BC57EEA7237635CC009A6BF0 /* Images */,
 				BC2328FD2373856D00881634 /* ViewController */,
 				BC2328E723737F3200881634 /* ViewController.swift */,
 				BC2328F72373854500881634 /* SignUpViewController.swift */,
@@ -82,6 +85,14 @@
 			children = (
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BC57EEA7237635CC009A6BF0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BC57EEAA23763778009A6BF0 /* logo_img.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC57EEAB23763778009A6BF0 /* logo_img.png in Resources */,
 				BC2328F023737F3400881634 /* LaunchScreen.storyboard in Resources */,
 				BC2328ED23737F3400881634 /* Assets.xcassets in Resources */,
 				BC2328EB23737F3200881634 /* Main.storyboard in Resources */,
